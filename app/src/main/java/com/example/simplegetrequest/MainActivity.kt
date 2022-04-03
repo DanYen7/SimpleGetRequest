@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         queue = Volley.newRequestQueue(this)
         binding.btnUpdatePokemon.setOnClickListener{
             val listAmount = Integer.parseInt(binding.etPokemonAmount.text.toString())
-            getPokemonList(5)
+            getPokemonList(listAmount)
         }
     }
 
